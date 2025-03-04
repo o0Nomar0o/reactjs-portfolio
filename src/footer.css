@@ -1,0 +1,129 @@
+footer {
+    background-color: #304146;
+    margin: 0;
+    padding: 15px;
+    font-family: Iowan Old Style;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw 0 5vw;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-left h3 {
+    font-size: 28px;
+    color: white;
+}
+
+.footer-left .footer-contact,
+.footer-right .footer-exlore {
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+.footer-left .footer-contact-list,
+.footer-right .footer-explore-list {
+    list-style-type: none;
+}
+
+.footer-right .footer-explore-list {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.footer-explore-list .footer-explore-info,
+.footer-contact-list .footer-contact-info {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact-list .footer-contact-info {
+    font-size: 18px;
+}
+
+.footer-explore-list .footer-explore-info {
+    font-size: 22px;
+}
+
+footer .footer-to-top {
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #e1d8d8;
+}
+
+.button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: .5px .5px 150px #252525;
+}
+
+.type1::after {
+    content: "Go!";
+    height: 50px;
+    width: 150px;
+    background-color: #cf3a3a;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-family: 'Iowan Old Style';
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+    content: "Back To Top";
+    height: 50px;
+    width: 150px;
+    background-color: #B65A5A;
+    color: #00ffff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-family: 'Iowan Old Style';
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+    transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+    transform: translateY(-50px) scale(1.2);
+}

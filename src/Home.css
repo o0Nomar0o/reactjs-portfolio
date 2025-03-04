@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+.home-container{
+    display: flex;
+    text-align: center;
+    margin-top: 30vh;
+    justify-content: center;
+    height: 100vh;
+}
+.home-container h1{
+    font-family: italiana;
+}

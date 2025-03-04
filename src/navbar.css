@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-container .nav-bar,
+.nav-container .nav-bar-small {
+    background-image:
+        url("./assets/grid.svg");
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid black;
+    border-radius: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.nav-container .nav-bar {
+    height: 10%;
+    width: 80%;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-container .nav-bar-small {
+    height: 5%;
+    width: 50vw;
+    transition: 0.2s ease-in-out;
+    padding: 15px;
+}
+
+.nav-bar .nav-title {
+    font-size: 3em;
+    margin-left: 2.35vw;
+
+}
+
+.nav-bar-small .nav-title-small {
+    font-size: 2em;
+    margin-left: 2.5vw;
+
+}
+
+
+
+.nav-bar .nav-item,
+.nav-bar .nav-title,
+.nav-bar-small .nav-title-small,
+.nav-bar-small .nav-item-small {
+    letter-spacing: 1px;
+    font-family: italiana;
+    user-select: none;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-bar .nav-item,
+.nav-bar-small .nav-item-small {
+    display: inline-block;
+}
+
+.nav-bar .nav-item {
+    margin-right: 3vw;
+    font-size: 1.8em;
+}
+
+.nav-bar-small .nav-item-small {
+    margin-right: 2vw;
+    font-size: 1.25em;
+}
+
+
+.links {
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+}
+
+.links:hover {
+    cursor: pointer;
+}
+
+.links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1.5px;
+    width: 100%;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.links:hover::after {
+    transform: scaleX(1);
+}
+
+.links:active {
+    transform: scaleX(1);
+}
+
+
+@media screen and (max-width: 1025px) {
+
+    .nav-bar .nav-item {
+        font-size: 1.5em;
+    }
+
+    .nav-bar-small .nav-item-small {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .nav-list-container .nav-list {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: inline-block;
+    }
+
+    .nav-title {
+        margin: 0 !important;
+        text-align: center;
+
+    }
+}
